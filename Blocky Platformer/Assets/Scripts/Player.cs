@@ -5,7 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] float _speed = 10;
-    
+    [SerializeField] float _jumpForce = 200;
+
     void Update()
     {
         var horizontal = Input.GetAxis("Horizontal") * _speed;
@@ -21,6 +22,11 @@ public class Player : MonoBehaviour
         {
             var spriteRenderer = GetComponent<SpriteRenderer>();
             spriteRenderer.flipX = horizontal < 0;
+        }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            rigidbody2D.AddForce(Vector2.up * _jumpForce);
         }
     }
 }
