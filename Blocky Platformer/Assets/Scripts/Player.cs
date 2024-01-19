@@ -6,7 +6,13 @@ public class Player : MonoBehaviour
 {
     [SerializeField] float _speed = 10;
     [SerializeField] float _jumpForce = 200;
+    
+    Vector2 _startPosition;
 
+    void Start()
+    {
+        _startPosition = transform.position;
+    }
     void Update()
     {
         var horizontal = Input.GetAxis("Horizontal") * _speed;
@@ -32,5 +38,10 @@ public class Player : MonoBehaviour
         {
             rigidbody2D.AddForce(Vector2.up * _jumpForce);
         }
+    }
+
+    public void ResetToStart()
+    {
+        transform.position = _startPosition;
     }
 }
