@@ -11,8 +11,12 @@ public class Player : MonoBehaviour
     {
         var horizontal = Input.GetAxis("Horizontal") * _speed;
         var rigidbody2D = GetComponent<Rigidbody2D>();
-        rigidbody2D.velocity = new Vector2(horizontal, rigidbody2D.velocity.y);
-        Debug.Log($"Velocity = {rigidbody2D.velocity}");
+
+        if (Mathf.Abs(horizontal) >= 1)
+        {
+            rigidbody2D.velocity = new Vector2(horizontal, rigidbody2D.velocity.y);
+            Debug.Log($"Velocity = {rigidbody2D.velocity}");
+        }
 
         var animator = GetComponent<Animator>();
         bool walking = horizontal != 0;
