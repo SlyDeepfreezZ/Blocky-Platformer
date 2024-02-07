@@ -3649,7 +3649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ce0edae836b1e458cdd5aca4363333, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneName: Level2
+  _sceneName: Level1
 --- !u!4 &864562479
 Transform:
   m_ObjectHideFlags: 0
@@ -3738,7 +3738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &944647929
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4125,7 +4125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1016121534
 SpriteRenderer:
   m_ObjectHideFlags: 0
