@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
         if (Mathf.Abs(horizontal) >= 1)
         {
             rigidbody2D.velocity = new Vector2(horizontal, rigidbody2D.velocity.y);
-            Debug.Log($"Velocity = {rigidbody2D.velocity}");
+            //Debug.Log($"Velocity = {rigidbody2D.velocity}");
         }
 
         var animator = GetComponent<Animator>();
