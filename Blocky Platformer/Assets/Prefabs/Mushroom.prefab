@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4663878292240847505}
+  - component: {fileID: 4572578842458002393}
   - component: {fileID: 5979474759769493513}
   - component: {fileID: 878168746147616156}
-  - component: {fileID: 7993100347283283558}
+  - component: {fileID: 8814881559133882681}
   m_Layer: 0
   m_Name: Mushroom
   m_TagString: Untagged
@@ -34,6 +35,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4572578842458002393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6811437387904569674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfd21e1a5a6f5a549bcc0b87c253018e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bounceVelocity: 10
 --- !u!212 &5979474759769493513
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -105,8 +119,8 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
---- !u!58 &7993100347283283558
-CircleCollider2D:
+--- !u!61 &8814881559133882681
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -114,7 +128,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 6811437387904569674}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: e8df8558296b2a7409cde15852ddf409, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -137,6 +151,16 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 0.000060796738, y: -0.35487556}
+  m_Offset: {x: 0.006158352, y: -0.28123915}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.3029685
+  m_Size: {x: 0.5853262, y: 0.4375217}
+  m_EdgeRadius: 0
